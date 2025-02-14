@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <title>Gegevens</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/bamboo.css"> <!--styling-->
+</head>
+    <h1>Gegevens</h1>       <!--Verschillende gegevens vragen-->
+
+    <form action="http://localhost/gegevens_formulier/backend.php" method="post"> <!--connecteren met backend-->
+        <label for="voornaam">Voornaam</label>
+        <input type="text" id="voornaam" name="voornaam" required>
+    
+        <label for="achternaam">Achternaam</label>
+        <input type="text" id="achternaam" name="achternaam" required>
+    
+        <label for="geslacht">Geslacht</label>
+        <input type="radio" name="geslacht" value="Man" required> Man
+        <input type="radio" name="geslacht" value="Vrouw" required> Vrouw
+    
+        <label for="geboortedatum">Geboortedatum</label>
+        <input type="date" id="geboortedatum" name="geboortedatum" required> <!--required = kan niet ingediend worden zonder het is ingevuld-->
+    
+        <label for="email">E-mailadres</label>
+        <input type="email" id="email" name="email" required>  <!--type = email  -> zorgt er voor dat er alleen geldige email adressen kunnen worden ingegeven-->
+    
+        <h3>Adres</h3>
+    
+        <label for="stad">Stad/Gemeente</label>
+        <input type="text" id="stad" name="stad" required>
+    
+        <label for="postcode">Postcode</label>
+        <input type="text" id="postcode" name="postcode" required>
+    
+        <label for="straat">Straat</label>
+        <input type="text" id="straat" name="straat" required>
+    
+        <label for="huisnummer">Huisnummer</label>
+        <input type="number" min="1" max="9999" id="huisnummer" name="huisnummer" required>  <!--minimum en maximum waarde-->
+    
+        <label for="bus">Bus</label>
+        <input type="text" id="bus" name="bus">
+    
+        <button type="submit">Versturen</button> <!--verstuur knop-->
+    </form>
+    
+</body>
+</html>
